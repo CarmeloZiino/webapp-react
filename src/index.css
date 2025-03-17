@@ -9,6 +9,20 @@ body{
 }
 
 /* NAVBAR */
+.cinemaKarme{
+    background-color: #0ad6a095;
+    border-radius: 20%;
+    padding: 2px;
+}
+
+.cinemaKarme:hover{
+    background-color:  #ffd167c2;
+    border-radius: 20%;
+    border: 2px solid  #ffd167;
+    border-style: inset;
+    padding: 2px;
+}
+
 .nav-bar-custom {
   background-color: #073a4b;
   border-radius: 20px;
