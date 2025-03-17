@@ -1,0 +1,67 @@
+
+/* Style Generico */
+
+body{
+    background-color: #118ab1;
+    font-family: "quantico", sans-serif;
+
+
+}
+
+/* NAVBAR */
+.nav-bar-custom {
+  background-color: #073a4b;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.nav-route {
+  color: #e2426a !important;
+  font-family: "tourney", sans-serif;
+  font-size: 2rem;
+}
+
+.nav-route:hover {
+  color: #ffd167 !important;
+  text-shadow: 2px 2px 3px #0ad6a1;
+}
+
+/* MAIN */
+
+main {
+  min-height: 100vh;
+}
+
+.h1-custom {
+  color: #f78c6a !important;
+  font-size: 3rem;
+  font-style: italic;
+  text-shadow: 3px 2.5px 3px black;
+}
+
+.movie-details{
+    color: #ffd167 !important;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-shadow: 3px 2.5px 3px #000000;
+
+}
+
+/* Not Found */
+
+.button-notfound{
+font-size: 1.5rem;
+border: 4px solid #073a4b;
+border-style: inset;
+}
+
+.button-notfound:hover{
+   color:#e2426a;
+   font-weight: bolder;
+    border: 4px  #ffd167;
+    border-style: inset;
+    }
+    
+    
