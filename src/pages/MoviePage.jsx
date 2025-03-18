@@ -56,9 +56,12 @@ export default function MoviePage() {
             <h4 className="movie-show">Gli utenti dicono:</h4>
           </div>
           {renderReviews()}
+          <div className="section-details-abs">
+            <p className="title-custom-abs">Trama</p>
+            <p className="details-abs">{movie.abstract}</p>
+          </div>
         </div>
       </div>
-      <section></section>
     </>
   );
 }
