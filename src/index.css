@@ -1,26 +1,23 @@
-
 /* Style Generico */
 
-body{
-    background-color: #118ab1;
-    font-family: "quantico", sans-serif;
-
-
+body {
+  background-color: #118ab1;
+  font-family: "quantico", sans-serif;
 }
 
 /* NAVBAR */
-.cinemaKarme{
-    background-color: #0ad6a095;
-    border-radius: 20%;
-    padding: 2px;
+.cinemaKarme {
+  background-color: #0ad6a095;
+  border-radius: 20%;
+  padding: 2px;
 }
 
-.cinemaKarme:hover{
-    background-color:  #ffd167c2;
-    border-radius: 20%;
-    border: 2px solid  #ffd167;
-    border-style: inset;
-    padding: 2px;
+.cinemaKarme:hover {
+  background-color: #ffd167c2;
+  border-radius: 20%;
+  border: 2px solid #ffd167;
+  border-style: inset;
+  padding: 2px;
 }
 
 .nav-bar-custom {
@@ -28,7 +25,6 @@ body{
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
-  
 }
 
 .nav-route {
@@ -55,27 +51,69 @@ main {
   text-shadow: 3px 2.5px 3px black;
 }
 
-.movie-details{
-    color: #ffd167 !important;
-  font-size: 1.5rem;
+/* Movie */
+.movie-details {
+  color: #ffd167 !important;
+  font-size: 1rem;
   font-style: italic;
   text-shadow: 3px 2.5px 3px #000000;
+}
+
+.singleCard{
+  min-width: 100%;
+  min-height: 100%;
 
 }
+
+.imageMovie{
+  max-height: 70%;
+}
+
+.card-img-top  {
+ 
+    width: 100%;  
+    height: 350px; 
+    object-fit: cover; 
+  }
+
+.card {
+  border: 2px solid #e2426a;
+  box-shadow: 5px 5px 0px #073a4b;
+  background-color: #e8bc1f97;
+}
+
+
+.movie-title {
+  color: #e2426a !important;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-shadow: 1px 0.5px 0px #000000;
+}
+
+
+.movieDir  , .movieAbs{
+  color: #0A957D !important;
+  font-size: 0.9rem;
+  text-shadow: 1px 0.5px 0px #000000;
+}
+
+.movieDir > strong , .movieAbs > strong{
+  color: #f78c6a !important ;
+  font-style: italic;
+}
+
 
 /* Not Found */
 
-.button-notfound{
-font-size: 1.5rem;
-border: 4px solid #073a4b;
-border-style: inset;
+.button-gen {
+  font-size: 1.5rem;
+  border: 4px solid #073a4b;
+  border-style: inset;
 }
 
-.button-notfound:hover{
-   color:#e2426a;
-   font-weight: bolder;
-    border: 4px  #ffd167;
-    border-style: inset;
-    }
-    
-    
+.button-gen:hover {
+  color: #e2426a;
+  font-weight: bolder;
+  border: 4px #ffd167;
+  border-style: inset;
+}

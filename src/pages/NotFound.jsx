@@ -12,7 +12,7 @@ export default function NotFound () {
 
             <Link to="/">
 
-                <button className="button-notfound">Back to Home</button>
+                <button className="button-gen">Back to Home</button>
 
             </Link>
 
