@@ -34,7 +34,8 @@ export default function MoviePage() {
   return (
     <>
       <div className="card-show">
-        <article className="section">
+        <div className="section-due">
+          <img src={movie.image} alt={movie.title} />
           <div className="section-details">
             <h1 className="title-custom-show">
               Titolo Film: <span className="details-show">{movie.title}</span>
@@ -49,18 +50,15 @@ export default function MoviePage() {
               Anno: <span className="details-show">{movie.release_year}</span>
             </h1>
           </div>
-
+        </div>
+        <div className="section">
           <div className="">
-          <h4 className="movie-show">Gli utenti dicono:</h4>
+            <h4 className="movie-show">Gli utenti dicono:</h4>
           </div>
           {renderReviews()}
-
-        </article>
-
-        <img src={movie.image} alt={movie.title} />
+        </div>
       </div>
-      <section>
-      </section>
+      <section></section>
     </>
   );
 }
