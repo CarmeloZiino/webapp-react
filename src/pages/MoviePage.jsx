@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import ReviewCard from "../components/ReviewCard";
+import ReviewsForm from "../components/ReviewsForm";
 
 export default function MoviePage() {
   const { id } = useParams();
@@ -50,16 +51,24 @@ export default function MoviePage() {
               Anno: <span className="details-show">{movie.release_year}</span>
             </h1>
           </div>
+          <div className="section-details-abs">
+            <p className="title-custom-abs">Trama</p>
+            <p className="details-abs">{movie.abstract}</p>
+          </div>
         </div>
+
+
+        
         <div className="section">
           <div className="">
             <h4 className="movie-show">Gli utenti dicono:</h4>
           </div>
           {renderReviews()}
-          <div className="section-details-abs">
-            <p className="title-custom-abs">Trama</p>
-            <p className="details-abs">{movie.abstract}</p>
-          </div>
+
+          {/*FORM*/}
+          {movie?.id && (
+            <ReviewsForm movie_id={movie.id} reloadReviews={fetchMovie} />
+          )}
         </div>
       </div>
     </>
