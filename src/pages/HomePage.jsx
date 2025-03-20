@@ -1,6 +1,7 @@
 import MovieCard from "../components/MovieCard";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect , useContext} from "react";
+
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);

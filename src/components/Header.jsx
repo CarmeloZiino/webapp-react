@@ -7,10 +7,19 @@ export default function Header() {
       <nav className="navbar navbar-expand nav-bar-custom">
         <div className="nav navbar-nav d-flex align-items-center">
           <NavLink className="navbar-brand" to="/">
-            <img className="cinemaKarme" src={cinemaKarme} alt="brand" width={75}/>
+            <img
+              className="cinemaKarme"
+              src={cinemaKarme}
+              alt="brand"
+              width={75}
+            />
           </NavLink>
           <NavLink className="nav-item nav-link nav-route" to="/">
             Home
+          </NavLink>
+          <NavLink className="nav-item nav-link nav-route" to="/movies/create">
+            {" "}
+            Crea Film
           </NavLink>
         </div>
       </nav>

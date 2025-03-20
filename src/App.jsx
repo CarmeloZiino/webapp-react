@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
 import NotFound from "./pages/NotFound";
+import CreateMoviePage from "./pages/CreateMovie";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route path="/" Component={HomePage} />
             <Route path="/movies/:id" Component={MoviePage} />
+            <Route path="/movies/create" Component={CreateMoviePage} />
             <Route path="*" Component={NotFound} />
           </Route>
         </Routes>
