@@ -12,7 +12,28 @@ export default function ReviewsForm({movie_id , reloadReviews}) {
 
   const [formData, setFormData] = useState(initialValue);
 
-  const handleSubmit = () => {
+  const [isFormValid, setIsFormValid] = useState(true);
+
+    //funzione di validazione
+    const validateForm = () => {
+        if ( !formData.text || !formData.name) return false;
+        if( isNaN(formData.vote) || formData.vote < 1 || formData.vote > 5) return false;
+        
+        return true;
+      }
+
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    //effettuiamo la validazione
+    if( !validateForm() ){
+      setIsFormValid(false);
+      return;
+    }
+
+
     axios
       .post(endpoint, formData, {
         headers: { "Content-Typer": "application/json" },
@@ -39,6 +60,10 @@ export default function ReviewsForm({movie_id , reloadReviews}) {
       <div className="section-details-rev">
         <h5 className="titleRev">Add Reviews</h5>
         <div className="card-body">
+
+        { !isFormValid && <div className='alert alert-danger mb-3'>I dati nel form non sono validi</div> }
+
+
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="movieRev">Name</label>

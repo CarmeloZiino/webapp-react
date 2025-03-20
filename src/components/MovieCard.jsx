@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 // Componente MovieCard che rappresenta una singola card di film
 const MovieCard = ({ movie }) => {
   const { id, title, director, abstract, image } = movie;
